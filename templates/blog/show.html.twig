@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<article>
+    <h2> {{ article.content | raw }}</h2>
+    <div class="metadata">Ecrit le 10/05/2018 à 19:00 dans la catégorie Politique</div>
+    <div class="content">
+        <img src="https://dummyimage.com/400x200/ccc/fff" alt="">
+        {{ article.content | raw }}
+    </div>
+</article>
+{% endblock %}
